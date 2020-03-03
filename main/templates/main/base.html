@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Convoquer</title>
+    <link rel="icon" href="{% static 'assets/img/icon.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.min.css' %}">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-dark  sticky-top float-none" id="mainNav" style="opacity: 1;background-color: #010101;min-height: 60px;height: auto;width: 100%;">
+        <div class="container"><a class="navbar-brand" href="{% url 'base' %}" style="color: rgb(251,251,251);height: 40px;font-family: 'Droid Serif';">Convoquer'20</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button"
+                data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(0,0,0);height: 40px;width: auto;"><i class="fa fa-bars" style="font-size: 20px;"></i><span style="font-size: 20px;">&nbsp;MENU</span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav align-items-end ml-auto text-uppercase">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href = "{% url 'base' %}">Convoquer'20</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href = "{% url 'broucher' %}">Official Broucher</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="{% url 'spon' %}">Sponsors</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="{% url 'event' %}">Events</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="{% url 'rule' %}">Rule Book</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="{% url 'gallery' %}">Gallery</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="{% url 'team' %}">Our Team</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    
+    {% block content %} 
+    
+    
+    {% endblock %}
+    <!---->
+    
+    <section id="contact" style="padding-top: 60px;">
+        <div class="col-lg-12 text-center">
+            <h3 class="text-uppercase section-heading">Contact Us</h3>
+        </div>
+        <div class="row" style="padding: 10px; margin: 0px;">
+            <div class="col-auto col-sm-auto col-md-auto col-lg-6 col-xl-6" style="width: auto;padding-bottom: 15px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="contactForm" name="contactForm" novalidate="novalidate">
+                                <div class="form-row">
+                                    <div class="col col-md-6">
+                                        <div class="form-group"><input class="form-control" type="text" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                        <div class="form-group"><input class="form-control" type="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                        <div class="form-group"><input class="form-control" type="tel" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group"><textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                                    </div>
+                                    <div class="col-lg-12 text-center">
+                                        <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit" style="background-color: rgb(33,33,35);">Send Message</button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto col-sm-auto col-md-auto col-lg-6 col-xl-6 m-auto" style="width: 100%;"><iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJI9VWC0qFG9bOE-oT5mQ4EhcblOj9R_Q&amp;q=IIT+Jammu&amp;zoom=11" width="100%" height="350"></iframe></div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© IITJammu 2020</span></div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item"><a href="#" style="color: rgb(14,14,12);"></a></li>
+                        <li class="list-inline-item"><a href="#" style="color: rgb(13,12,12);">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{% static 'assets/js/script.min.js' %}"></script>
+</body>
+
+</html>

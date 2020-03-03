@@ -1,0 +1,146 @@
+{% extends "main/base.html" %}
+{%load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+<link rel="stylesheet" href="{% static 'assets/css/grid-gallery.css' %}">
+
+
+<section class="gallery-block grid-gallery" style="background-color: black;">
+    <div class="container">
+        <div class="heading">
+            <h2 style="color: white;">Our Gallery</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/1.jpeg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/1.jpeg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/2.jpg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/2.jpg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/3.jpg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/3.jpg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/4.jpg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/4.jpg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/5.jpg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/5.jpg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/6.jpg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/6.jpg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/13.JPG' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/13.JPG' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/8.jpeg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/8.jpeg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/9.jpeg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/9.jpeg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/10.jpg' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/10.jpg' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/11.JPG' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/11.JPG' %}">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/12.JPG' %}">
+                    <img class="img-fluid image scale-on-hover" src="{% static 'assets/img/gallery_images/12.JPG' %}">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--
+<div class="container gallery-container">
+
+    <h1>Bootstrap 3 Gallery</h1>
+
+    <p class="page-description text-center">Fluid Layout With Overlay Effect</p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/bridge.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/bridge.jpg' %}" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/park.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/park.jpg' %}" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/tunnel.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/tunnel.jpg' %}" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/traffic.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/traffic.jpg' %}" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/coast.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/coast.jpg' %}" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/rails.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/rails.jpg' %}" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/rails.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/rails.jpg' %}" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/rails.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/rails.jpg' %}" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="{% static 'assets/img/gallery_images/rails.jpg' %}">
+                    <img src="{% static 'assets/img/gallery_images/rails.jpg' %}" alt="Rails">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+-->
+
+{% endblock content%}

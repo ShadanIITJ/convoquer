@@ -1,0 +1,54 @@
+{% extends "main/base.html" %}
+{%load static %}
+
+
+{% block content %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/event.min.css' %}">
+
+<body>
+    <div class="photo-gallery" style="background-color: rgb(0,0,0);">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center" style="color: rgb(173,203,234);">Formal Events</h2>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-12 col-md-6 col-lg-6 item" style="background-color: #000000;padding: 15px;"><img class="img-fluid" src="{% static 'assets/img/event/val.jpg' %}">
+                    <h1 style="color: rgb(43,190,146);margin-left: 10%;">Volleyball</h1>
+                    <p style="margin-left: 9%;"><a href="{% url 'rule' %}" style="margin: 10px;color: rgb(43,190,146);">Rule</a><a href="{% static 'assets/img/Schedule_and_Fixture.pdf' %}" style="margin: 10px;color: rgb(43,190,146);">Schedule</a><a href="#" style="margin: 10px;color: rgb(43,190,146);">Result</a></p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 item" style="background-color: #000000;padding: 15px;"><img class="img-fluid" src="{% static 'assets/img/event/tt.jpg' %}">
+                    <h1 style="color: rgb(43,190,146);margin-left: 10%;">Table Tennis</h1>
+                    <p style="margin-left: 9%;"><a href="{% url 'rule' %}" style="margin: 10px;color: rgb(43,190,146);">Rule</a><a href="{% static 'assets/img/Schedule_and_Fixture.pdf' %}" style="margin: 10px;color: rgb(43,190,146);">Schedule</a><a href="#" style="margin: 10px;color: rgb(43,190,146);">Result</a></p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 item" style="background-color: #000000;padding: 15px;"><img class="img-fluid" src="{% static 'assets/img/event/badminton.jpg' %}">
+                    <h1 style="color: rgb(43,190,146);margin-left: 10%;">Badminton</h1>
+                    <p style="margin-left: 9%;"><a href="{% url 'rule' %}" style="margin: 10px;color: rgb(43,190,146);">Rule</a><a href="{% static 'assets/img/Schedule_and_Fixture.pdf' %}" style="margin: 10px;color: rgb(43,190,146);">Schedule</a><a href="#" style="margin: 10px;color: rgb(43,190,146);">Result</a></p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 item" style="background-color: #000000;padding: 15px;"><img class="img-fluid" src="{% static 'assets/img/event/circket.jpg' %}">
+                    <h1 style="color: rgb(43,190,146);margin-left: 10%;">Cricket</h1>
+                    <p style="margin-left: 9%;"><a href="{% url 'rule' %}"style="margin: 10px;color: rgb(43,190,146);">Rule</a><a href="{% static 'assets/img/Schedule_and_Fixture.pdf' %}" style="margin: 10px;color: rgb(43,190,146);">Schedule</a><a href="{% url 'circket' %}" style="margin: 10px;color: rgb(43,190,146);">Result</a></p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 item" style="background-color: #000000;padding: 15px;"><img class="img-fluid" src="{% static 'assets/img/event/chess.jpg' %}">
+                    <h1 style="color: rgb(43,190,146);margin-left: 10%;">Chess</h1>
+                    <p style="margin-left: 9%;"><a href="{% url 'rule' %}" style="margin: 10px;color: rgb(43,190,146);">Rule</a><a href="{% static 'assets/img/Schedule_and_Fixture.pdf' %}" style="margin: 10px;color: rgb(43,190,146);">Schedule</a><a href="#" style="margin: 10px;color: rgb(43,190,146);">Result</a></p>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 col-lg-6 item" style="background-color: #000000;padding: 15px;"><img class="img-fluid" src="{% static 'assets/img/event/bascketball.jpg' %}">
+                    <h1 style="color: rgb(43,190,146);margin-left: 10%;">Basketball</h1>
+                    <p style="margin-left: 9%;"><a href="{% url 'rule' %}" style="margin: 10px;color: rgb(43,190,146);">Rule</a><a href="{% static 'assets/img/Schedule_and_Fixture.pdf' %}" style="margin: 10px;color: rgb(43,190,146);">Schedule</a><a href="#" style="margin: 10px;color: rgb(43,190,146);">Result</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock content%}

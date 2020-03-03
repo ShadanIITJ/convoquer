@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+{%load static %}
+
+
+{% block content %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/event.min.css' %}">
+        <div class="photo-gallery" style="background-color: rgb(0,0,0);">
+            <div class="container">
+                <div class="intro">
+                    <h3 class="text-center" style="color: rgb(173,203,234);padding-top: 10px;">CONVOQUER</h3>
+                    <p class="text-center" style="color: rgb(173,203,234);">Proudly present it's 3rd edition of sponsors</p>
+                </div>
+                <div class="row photos">
+                    <div class="col-sm-12 col-md-6 col-lg-6 item" style="background-color: #000000;padding: 15px; margin-left:15%"><img class="img-fluid" src="{% static 'assets/img/trader.jpg' %}">
+                        <h3 style="color: rgb(43,190,146);margin-left: 10%;">K.Traders</h3>
+                    </div>
+                    
+            </div>
+    </div>
+
+
+
+
+        {% endblock content%}
